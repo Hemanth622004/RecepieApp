@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("pexels-eberhard-grossgasteiger-844297.jpg");
+        }
+
+        .login-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
+
+        .login-container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-form input[type="submit"] {
+            background-color:#d6963d;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .login-form input[type="submit"]:hover {
+            background-color: #eeb75d;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login Form</h1>
+        <form class="login-form" method="post" action="/loginSubmit">
+            Email id:
+            <input type="text" name="Email"><br>
+            Password:
+            <input type="password" name="Password"><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>

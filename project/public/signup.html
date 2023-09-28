@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("pexels-eberhard-grossgasteiger-844297.jpg")
+        }
+
+        .signup-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
+
+        .signup-container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .signup-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .signup-form input[type="submit"] {
+            background-color:#d6963d;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .signup-form input[type="submit"]:hover {
+            background-color: #eeb75d;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Signup Form</h1>
+        <form class="signup-form" method="post" action="/signupSubmit">
+            Fullname:
+            <input type="text" name="Fullname"><br>
+            Email id:
+            <input type="text" name="Email"><br>
+            Password:
+            <input type="password" name="Password"><br>
+            <input type="submit" value="Signup">
+        </form>
+        <p>Already have an account? <a href="login.html">Login</a></p> 
+    </div>
+</body>
+</html>
